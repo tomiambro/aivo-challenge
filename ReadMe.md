@@ -2,7 +2,7 @@
 
 ## Use
 
-You can run this project by installing the packages in the `requirements.txt` file running
+You can run this project by installing the packages in the `requirements.txt` file
 
     pip install -r requirements.txt
 
