@@ -18,5 +18,13 @@ def endpoint(request):
 		indicator = request.GET['indicator']
 
 	value = request.GET['value']
+
+	try:
+		value = float(value)
+	except Exception as e:
+		print(e)
+		return Response(status=status.HTTP_400_BAD_REQUEST)		
+
 	res = df[(df['Indicator'] == indicator) & (df['Value'] > float(value))]
+	# print(res)
 	return Response(res.to_json(), status=status.HTTP_200_OK)
