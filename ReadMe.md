@@ -13,6 +13,6 @@ and then running:
 
 ## Details
 Once the server is running you can send GET requests to `http://localhost:8000/endpoint/`
-It currently takes `value` as a parameter and accepts `indicator` as well in case a different one is required (the default is 'Life satisfaction')
+It currently takes `value` as a parameter and accepts `indicator` as well in case a different one is required (the default is 'SW_LIFS')
 
 The endpoint code can be found under api/views.py
